@@ -8,7 +8,14 @@ public:
 	vector<int> of(int number) {
 		vector<int> ret = {};
 		if (number > 1) {
-			ret.push_back(number);
+			if (number == 4) {
+				while (number % 2 == 0) {
+					ret.push_back(2);
+				}
+			}
+			else {
+				ret.push_back(number);
+			}
 		}
 		return ret;
 	}
